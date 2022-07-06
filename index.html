@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a165257d25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="index.html"><img src="Images/smol-logo.png"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="">Mission</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+           
+        </div>
+    </nav>
+    <div class="content">
+        <small>Welcome to</small>
+        <h1>Mars <br> Migration</h1>
+        
+        <a href="" class="Btn">Status Report</a> 
+    </div>
+    
+    </div>
+
+    <div class="met">
+        <img src="rock.png">
+        <img src="rock.png">
+        <img src="rock.png">
+        <img src="rock.png">
+        <img src="rock.png">
+        <img src="rock.png">
+        <img src="rock.png">
+        
+    </div>
+    
+</body>
+
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Btn{
+    color: rgb(238, 234, 233);
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+}
+.Btn:hover{
+    border: 1px solid rgb(255, 1, 1);
+    background-color: #792620;
+    transition: 1s;
+
+}
+.content{
+    color: rgb(255, 255, 255);
+    position: absolute;
+       top: 50%;
+       left: 8%;
+       transform: translateY(-50%) ;
+       z-index: 2;
+}
+.content h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    size: 70px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+.met img{
+width: 30px;
+animation: meteor 7s linear infinite;
+}
+.met{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: -70px;
+}
+@keyframes meteor{
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50%{
+       
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(+80vh);
+        opacity: 0;
+    }
+}
+.met img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.met img:nth-child(2){
+    animation-delay: 1s;
+    width: 15px;
+}
+.met img:nth-child(3){
+    animation-delay: 3s;
+    width: 20px;
+}
+.met img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 10px;
+}
+.met img:nth-child(5){
+    animation-delay: 3s;
+    width: 25px;
+}
+.met img:nth-child(6){
+    animation-delay: 6s;
+    width: 22px;
+}
+.met img:nth-child(7){
+    animation-delay: 7s;
+    width: 20px;
+}
+@media(max-width: 700px){
+.content h1{
+    font-size: 30px;
+    line-height: 30px;
+}
+
+small{
+    font-size: 10px;
+}
+.nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+}
+}
+</style>
+
+</html>
