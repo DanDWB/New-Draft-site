@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a165257d25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/smol-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-arrow-right-to-bracket" onclick="hideMenu()" style="color:white"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Mission.html">Mission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>    
+            </div>
+            <i class="fa fa-rocket" onclick="showMenu()" style="color:rgb(110, 36, 36)"></i>
+        </nav>
+
+
+        <div class="met">
+            <img src="rock.png">
+            <img src="rock.png">
+            <img src="rock.png">
+            <img src="rock.png">
+            <img src="rock.png">
+            <img src="rock.png">
+            <img src="rock.png">
+            
+        </div>
+
+
+
+
+    <div class="form">
+
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa-solid fa-user-astronaut"></i> Your Name</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fa-solid fa-satellite"></i> Contact Number</label>
+                  </div>
+          <div class="input-group">
+            <input type="text" id="email" required>
+            <label for="email"><i class="fa-solid fa-satellite-dish"></i> Email</label>
+          </div>
+          <div class="input-group">
+            <textarea id="message" rows="8" required></textarea>
+            <label for="message"><i class="fa-solid fa-shuttle-space"></i> Your message</label>
+          </div>
+          <button type="submit">SUBMIT <i class="fa-solid fa-meteor"></i></button>
+            
+
+        </form>
+
+    </div>
+
+    
+    
+    <style>
+
+
+.met img{
+width: 30px;
+animation: meteor 7s linear infinite;
+}
+.met{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: -70px;
+}
+       
+       .header{
+        min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), #685c55), url("images/marsone.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+       }
+
+       .navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+       }
+       .logo{
+    width: 70px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    size: 70px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+nav .fa{
+    display: none;
+}
+
+
+
+.form{
+            
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+               }
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+button:hover{
+    border: 1px solid rgb(255, 1, 1);
+    background-color: #792620;
+    transition: 1s;
+
+}
+textarea:hover{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgb(252, 0, 0);
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+    transition: 1s;
+}
+input:hover{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgb(252, 0, 0);
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+    transition: 1s;
+}
+
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+
+
+@keyframes meteor{
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50%{
+       
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(+80vh);
+        opacity: 0;
+    }
+}
+.met img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.met img:nth-child(2){
+    animation-delay: 1s;
+    width: 15px;
+}
+.met img:nth-child(3){
+    animation-delay: 3s;
+    width: 20px;
+}
+.met img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 10px;
+}
+.met img:nth-child(5){
+    animation-delay: 3s;
+    width: 25px;
+}
+.met img:nth-child(6){
+    animation-delay: 6s;
+    width: 22px;
+}
+.met img:nth-child(7){
+    animation-delay: 7s;
+    width: 20px;
+}
+
+
+
+
+
+
+
+       
+     
+
+
+    
+    
+    </style>
+    
+</body>
+
+</html>
