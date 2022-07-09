@@ -15,14 +15,15 @@
     <nav>
         <a href="index.html"><img src="Images/smol-logo.png"></a>
         <div class="nav-links">
+            <i class="fa-solid fa-arrow-right-to-bracket" style="color:white"></i>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="">Mission</a></li>
                 <li><a href="index.html">Contact</a></li>
                 <li><a href="">About</a></li>
-            </ul>
-           
+            </ul>    
         </div>
+        <i class="fa-solid fa-rocket" style="color:white"></i>
     </nav>
     <div class="content">
         <small>Welcome to</small>
@@ -55,7 +56,6 @@
     font-family: 'Oswald', sans-serif;
 
 }
-
 
 .header{
     min-height: 100vh;
@@ -103,6 +103,7 @@
        transform: translateY(-50%) ;
        z-index: 2;
 }
+
 .content h1{
     font-size: 80px;
     margin: 10px 0 30px;
@@ -146,6 +147,8 @@ nav img{
 .nav-links ul li:hover::after{
    width: 100%;
 }
+
+
 .met img{
 width: 30px;
 animation: meteor 7s linear infinite;
@@ -158,6 +161,11 @@ animation: meteor 7s linear infinite;
     position: absolute;
     top: -70px;
 }
+nav .fa-solid{
+    display: none;
+}
+
+
 @keyframes meteor{
     0%{
         transform: translateX(0);
@@ -204,10 +212,20 @@ animation: meteor 7s linear infinite;
     animation-delay: 7s;
     width: 20px;
 }
+
+
 @media(max-width: 700px){
 .content h1{
     font-size: 30px;
     line-height: 30px;
+}
+nav .fa-solid{
+    display: block;
+    margin: top;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+    border: black;
 }
 
 small{
