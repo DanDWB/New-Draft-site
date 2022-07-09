@@ -14,8 +14,8 @@
     <section class="header">
     <nav>
         <a href="index.html"><img src="Images/smol-logo.png"></a>
-        <div class="nav-links">
-            <i class="fa-solid fa-arrow-right-to-bracket" style="color:white"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-arrow-right-to-bracket" onclick="hideMenu()" style="color:white"></i>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="">Mission</a></li>
@@ -23,7 +23,7 @@
                 <li><a href="">About</a></li>
             </ul>    
         </div>
-        <i class="fa-solid fa-rocket" style="color:white"></i>
+        <i class="fa-solid fa-rocket" onclick="showMenu()" style="color:rgb(110, 36, 36)"></i>
     </nav>
     <div class="content">
         <small>Welcome to</small>
@@ -44,6 +44,23 @@
         <img src="rock.png">
         
     </div>
+
+<!--------JavaScript for toggle-------->
+
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
     
 </body>
 
@@ -225,7 +242,10 @@ nav .fa-solid{
     font-size: 22px;
     cursor: pointer;
     padding: 10px;
-    border: black;
+   
+}
+.nav-links ul {
+    padding: 30px;
 }
 
 small{
@@ -240,7 +260,7 @@ small{
     height: 100vh;
     width: 200px;
     top: 0;
-    right: 0;
+    right: -200px;
     text-align: left;
     z-index: 2;
 }
