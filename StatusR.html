@@ -25,67 +25,28 @@
         </div>
         <i class="fa-solid fa-rocket" onclick="showMenu()" style="color:rgb(110, 36, 36)"></i>
     </nav>
-    <div class="content">
-        
-        <h1>Status <br> Report</h1>
-        <small>This page is dedicated to the progress of <br> Mars Migration</small>
-        
-    </div>
-
-    </section>
-
-<section class="Progress">
-
-    <h2>Latest Mission Logs</h2>
 
 
-    <div class="images">
-
-<div class="april">
-
-</div>
-
-<div class="april">
-
-</div>
-
-<div class="april">
-
-</div>
-
-    </div>
+    <h3>IN PROGRESS</h3>
     
-<div class="status">
-   <div class="update">
-<h3>April 2022</h3>
-<p>I have officially sent my manuscript off to an editor <br> I'm very
-excited and nervous, this is a huge milestone! <br>
-I have chosen an editor based in Texas, USA who like me, is a sci-fi and <br>
-fantasy nerd! Nuff said. I will keep you updated at the next milestone.</p>
-   </div>
+<div class="new">
 
-   <div class="update">
-    <h3>March 2022</h3>
-    <p>I have officially sent my manuscript off to an editor <br> I'm very
+        <img class="image_jpg" src="images/qt=q_31.jpeg" alt="Image" width="350px" height="250px">
+        <div class="imageoverlay">
+            <div class="imagetitle">April 2022</div>
+            <p class="imagedesc"> I have officially sent my manuscript off to an editor <br> I'm very
     excited and nervous, this is a huge milestone! <br>
     I have chosen an editor based in Texas, USA who like me, is a sci-fi and <br>
-    fantasy nerd! Nuff said. I will keep you updated at the next milestone.</p>
-    </div>
-
-    <div class="update">
-        <h3>Februrary 2022</h3>
-        <p>I have officially sent my manuscript off to an editor <br> I'm very
-        excited and nervous, this is a huge milestone! <br>
-        I have chosen an editor based in Texas, USA who like me, is a sci-fi and <br>
-        fantasy nerd! Nuff said. I will keep you updated at the next milestone.</p>
-     </div>
-
+    fantasy nerd! Nuff said. I will keep you updated at the next milestone.  
+            </p>
 </div>
-
-</section>
-
     
-    </div>
+
+
+
+
+
+
 
     <div class="met">
         <img src="rock.png">
@@ -120,6 +81,8 @@ fantasy nerd! Nuff said. I will keep you updated at the next milestone.</p>
 
 <style>
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -127,26 +90,9 @@ fantasy nerd! Nuff said. I will keep you updated at the next milestone.</p>
 
 }
 
-
-.Progress{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-    
-    
-}
-h2{
-    font-size: 30px;
-    font-weight: 600;
-    color: #792620;
-}
-p{
-    color: rgb(90, 16, 16);
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
+.h3{
+    color: white;
+    font-size: 40px;
 }
 
 
@@ -156,53 +102,53 @@ p{
     justify-content: space-between;
 }
 
-.update{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-h3{
-    text-align: center;
-    font-weight: 600 ;
-    margin: 10px 0;
-}
-.update:hover{
-    box-shadow: 0 0 30px 0 rgba(255, 0, 0, 1);
-}
-
-.images{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.april{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    background-image: url(images/qt=q_31.jpeg);
-    max-width: 400px;
-    height: 200px;
-    background-position: center;
-    background-size: cover;
+.new{
+    width: 350px;
+    height: 250px;
     position: relative;
+    padding: 50px;
+}
+.image_jpg{
+    display: block;
+    width: 100%;
+}
+
+.imageoverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(94, 9, 9, 0.7);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
     transition: 0.5s;
 }
-.april:hover{
-    box-shadow: 0 0 30px 0 rgba(255, 0, 0, 1);
+.imageoverlay >:last-child{
+    transform: translateY(20px);
+    transition: transform 0.5s;
 }
-.april img{
-    max-width: 100%;
-    height: auto;
+.imageoverlay >:last-child:hover{
+    transform: translateY(0);
+}
 
+
+.imageoverlay:hover{
+    opacity: 1;
+}
+
+.imagetitle{
+    font-size: 2em ;
+    font-weight: bold;
+    text-align: center;
+}
+.imagedesc{
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 
@@ -229,38 +175,9 @@ h3{
     align-items: center;
     justify-content: space-between;
 }
-.Btn{
-    color: rgb(238, 234, 233);
-    padding: 10px 25px;
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 40px;
-    outline: none;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 10px 20px;
-    position: relative;
-}
-.Btn:hover{
-    border: 1px solid rgb(255, 1, 1);
-    background-color: #792620;
-    transition: 1s;
 
-}
-.content{
-    color: rgb(255, 255, 255);
-    position: absolute;
-       top: 50%;
-       left: 8%;
-       transform: translateY(-50%) ;
-       z-index: 2;
-}
 
-.content h1{
-    font-size: 80px;
-    margin: 10px 0 30px;
-    line-height: 80px;
-}
+
 
 nav{
     display: flex;
@@ -310,7 +227,7 @@ animation: meteor 7s linear infinite;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
+    position: fixed;
     top: -70px;
 }
 nav .fa-solid{
@@ -383,9 +300,8 @@ nav .fa-solid{
     padding: 30px;
 }
 
-small{
-    font-size: 16px;
-}
+
+
 .nav-links ul li{
     display: block;
 }
@@ -401,88 +317,6 @@ small{
     transition: 1s;
 }
 
-
-
-
-
-
-
-
-.Progress{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-    
-    
-}
-h2{
-    font-size: 30px;
-    font-weight: 600;
-    color: #792620;
-}
-p{
-    color: rgb(90, 16, 16);
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-
-.status{
-    flex-direction: column;
-}
-
-.update{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-h3{
-    text-align: center;
-    font-weight: 600 ;
-    margin: 10px 0;
-}
-.update:hover{
-    box-shadow: 0 0 30px 0 rgba(255, 0, 0, 1);
-}
-
-.images{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-    display: none;
-}
-
-.april{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    background-image: url(images/qt=q_31.jpeg);
-    max-width: 400px;
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    transition: 0.5s;
-}
-.april:hover{
-    box-shadow: 0 0 30px 0 rgba(255, 0, 0, 1);
-}
-.april img{
-    max-width: 100%;
-    height: auto;
-
-}
 
 
 
