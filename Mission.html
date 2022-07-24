@@ -27,50 +27,45 @@
     </nav>
     
 
-<section class="about-book"></section>
-
-<h1>The Misson</h1>
-
-<p>
-    Welcome to the beginning, this is where and how it all started. I hope your journey is as immersive as it 
-    were for me!
-</p>
-
-<p>
-
-    I had the idea when one day I was standing in my kitchen, looking out to my back garden. In the distance there is a school, and I wondered what would happen if something landed there from space - In real-life that would be a dream come true. I'm a whole lot of geek!
-
-    When I was younger, my dad would tell the tale of his UFO encounter. Then when I would have been around ten or eleven I had my own. Myself and a friend saw an unexplained craft in the sky near to where I lived in Walsall. 
-    
-    So I started to write a tale about two spheres, I imagined them arriving into the Earths atmosphere and dropping in a straight line along  the surface from the UK, and then over to Canada. So one lands in the middle of the UK - in my neck of the woods, and the other lands in Selkirk, Mb, Canada. 
-    
-    When they land, to enable interactions with a person of their choosing, they release a field which pauses time for twenty miles in all directions.
-    
-    The spheres are then touched by a young man, and young woman, who are just going about their everyday lives.  Little did they know, they have been personally selected by the spheres. 
-    
-    When they touch them, they are propelled into another civilization that resides inside the dark space beyond a black hole. Why them? Why have they been taken from their home?  
-    
-    Will they be allowed home again? And what is happening down on the Earth following the aftermath of the landings? 
-    
-</p>
-
-
-
-
-
-    
-    </div>
-
-    <div class="met">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
+<div class="container">
+    <div class="card">
+        <div class="content">
+        <h2>The Mission</h2>
+        <h3>
+            Welcome to the beginning, this is where and how it all started. I hope your journey is as immersive as it 
+            were for me!
+        </h3>
         
+        <p>
+        
+            I had the idea when one day I was standing in my kitchen, looking out to my back garden. In the distance there is a school, and I wondered what would happen if something landed there from space - In real-life that would be a dream come true. I'm a whole lot of geek!
+        
+            When I was younger, my dad would tell the tale of his UFO encounter. Then when I would have been around ten or eleven I had my own. Myself and a friend saw an unexplained craft in the sky near to where I lived in Walsall. 
+            
+            So I started to write a tale about two spheres, I imagined them arriving into the Earths atmosphere and dropping in a straight line along  the surface from the UK, and then over to Canada. So one lands in the middle of the UK - in my neck of the woods, and the other lands in Selkirk, Mb, Canada. 
+            
+            When they land, to enable interactions with a person of their choosing, they release a field which pauses time for twenty miles in all directions.
+            
+            The spheres are then touched by a young man, and young woman, who are just going about their everyday lives.  Little did they know, they have been personally selected by the spheres. 
+            
+            When they touch them, they are propelled into another civilization that resides inside the dark space beyond a black hole. Why them? Why have they been taken from their home?  
+            
+            Will they be allowed home again? And what is happening down on the Earth following the aftermath of the landings? 
+            
+        </p>
     </div>
+<div/>
+
+<div class="met">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    
+</div>
 
 <!--------JavaScript for toggle-------->
 
@@ -88,6 +83,16 @@
         }
 
     </script>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelector(".card"),{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+</script>
     
 </body>
 
@@ -102,23 +107,69 @@
 }
 
 
-h1{
-    color: white;
-    text-align: center;
-    font-size: 40px;
+
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   min-height: 100vh;
 }
-p{
-    color: white;
-    text-align: center;
-    padding: 20px;
+.container{
+    position: centre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
 }
+.container .card{
+    position: relative;
+    width: 650px;
+    height: 550px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px;
+}
+
+.container .card .content{
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card .content h2{
+    color: white;
+}
+.container .card .content h3{
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+}
+.container .card .content p{
+    font-size: 15px;
+    padding: 36px;
+    color: white;
+    font-weight: 800;
+
+}
+
+
+
+
+
+
 
 
 
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(Images/homepage.jpg);
+    background-image: url(Images/da.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -153,20 +204,7 @@ p{
     transition: 1s;
 
 }
-.content{
-    color: rgb(255, 255, 255);
-    position: absolute;
-       top: 50%;
-       left: 8%;
-       transform: translateY(-50%) ;
-       z-index: 2;
-}
 
-.content h1{
-    font-size: 80px;
-    margin: 10px 0 30px;
-    line-height: 80px;
-}
 
 nav{
     display: flex;
@@ -277,6 +315,51 @@ nav .fa-solid{
     font-size: 30px;
     line-height: 30px;
 }
+
+
+
+
+.container .card{
+    position: relative;
+    width: 650px;
+    height: 850px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px;
+}
+
+.container .card .content{
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card .content h2{
+    color: white;
+}
+.container .card .content h3{
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+}
+.container .card .content p{
+    font-size: 15px;
+    padding: 36px;
+    color: white;
+    font-weight: 800;
+
+}
+
+
+
+
+
+
+
 nav .fa-solid{
     display: block;
     margin: top;
