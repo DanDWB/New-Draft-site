@@ -21,29 +21,40 @@
                 <li><a href="Mission.html">Mission</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="About.html">About</a></li>
-            </ul>    
+            </ul>     
         </div>
         <i class="fa-solid fa-rocket" onclick="showMenu()" style="color:rgb(110, 36, 36)"></i>
     </nav>
     
-    <div class="hero">
-        <h1>Get in touch!</h1>
-    
-        <div class="social-links">
-           <a href="https://www.facebook.com/authorwmbailey/"><i class="fa-brands fa-facebook-f"></i></a>
-           <a href="https://instagram.com/marsmigration?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
-           <a href="https://twitter.com/WayneWestMids?t=7lYINvCla41ImdspUqL50g&s=09"><i class="fa-brands fa-twitter"></i></a>
-           <a href="https://www.linkedin.com/in/waynebaileyagw"><i class="fa-brands fa-linkedin"></i></a>
-    
-        </div>
-    
-    </div>
-    
-    
 
-
-    
+<div class="container">
+    <div class="card">
+        
+        <h2>The Mission</h2>
+        <h3>
+            Welcome to the beginning, this is where and how it all started. I hope your journey is as immersive as it 
+            were for me!
+        </h3>
+        
+        <p>
+        
+            I had the idea when one day I was standing in my kitchen, looking out to my back garden. In the distance there is a school, and I wondered what would happen if something landed there from space - In real-life that would be a dream come true. I'm a whole lot of geek!
+        
+            When I was younger, my dad would tell the tale of his UFO encounter. Then when I would have been around ten or eleven I had my own. Myself and a friend saw an unexplained craft in the sky near to where I lived in Walsall. 
+            
+            So I started to write a tale about two spheres, I imagined them arriving into the Earths atmosphere and dropping in a straight line along  the surface from the UK, and then over to Canada. So one lands in the middle of the UK - in my neck of the woods, and the other lands in Selkirk, Mb, Canada. 
+            
+            When they land, to enable interactions with a person of their choosing, they release a field which pauses time for twenty miles in all directions.
+            
+            The spheres are then touched by a young man, and young woman, who are just going about their everyday lives.  Little did they know, they have been personally selected by the spheres. 
+            
+            When they touch them, they are propelled into another civilization that resides inside the dark space beyond a black hole. Why them? Why have they been taken from their home?  
+            
+            Will they be allowed home again? And what is happening down on the Earth following the aftermath of the landings? 
+            
+        </p>
     </div>
+<div/>
 
     <div class="met">
         <img src="rock.png">
@@ -85,17 +96,54 @@
 
 }
 
+
+
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   min-height: 100vh;
+}
+.container{
+    position: centre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.container .card{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px;
+    
+}
+
+
+
+
+
+
+
+
+
 .header{
-        min-height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-image: url("images/marsone.jpg");
+    background-image: url(Images/homepage.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-       }
-       .hero1{
-        display: none !important;
-       }
+}
 .logo{
     width: 70px;
     cursor: pointer;
@@ -108,63 +156,32 @@
     align-items: center;
     justify-content: space-between;
 }
-div.hero{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-h1{
-    font-size: 40px;
-    margin-bottom: 100px;
-    margin-top: -100px;
-    color: white;
-}
-.social-links{
-    display: flex;
-}
-.social-links a{
-    width: 80px;
-    height: 80px;
-    text-align: center;
+.Btn{
+    color: rgb(238, 234, 233);
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
     text-decoration: none;
-    color: black;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
-    margin: 0 30px;
-    border-radius: 50%;
+    padding: 10px 20px;
     position: relative;
-    overflow: hidden;
-    transition: transform 0.5s;
 }
-.social-links a .fa-brands{
-font-size: 30px;
-line-height: 80px;
-position: relative;
-z-index: 10;
-transition: color 0.5s;
-}
-.social-links a::after{
-    content: '' ;
-    width: 100%;
-    height: 100%;
-    top: -90px;
-    left: 0;
-    background: linear-gradient(-45deg, #ed1c94, #ffec17);
-    position: absolute;
-    transition: 0.5s;
-}
-.social-links a:hover::after{
-    top: 0;
-}
-.social-links a:hover .fa-brands{
-    color: white;
-}
-.social-links a:hover{
-    transform: translateY(-10px);
-}
+.Btn:hover{
+    border: 1px solid rgb(255, 1, 1);
+    background-color: #792620;
+    transition: 1s;
 
+}
+.content{
+    color: rgb(255, 255, 255);
+    position: absolute;
+       top: 50%;
+       left: 8%;
+       transform: translateY(-50%) ;
+       z-index: 2;
+}
 
 .content h1{
     font-size: 80px;
@@ -281,67 +298,36 @@ nav .fa-solid{
     font-size: 30px;
     line-height: 30px;
 }
+nav .fa-solid{
+    display: block;
+    margin: top;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+   
+}
+.nav-links ul {
+    padding: 30px;
+}
 
-.hero1{
-        display: block !important;
+small{
+    font-size: 10px;
 }
-h1{
-    font-size: 40px;
-    margin-bottom: 100px;
-    margin-top: -100px;
-    color: white;
+.nav-links ul li{
+    display: block;
 }
-.social-links1{
-    list-style: none;
-}
-.social-links a{
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
-    margin: 0 30px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s;
-}
-.social-links a .fa-brands{
-font-size: 30px;
-line-height: 80px;
-position: relative;
-z-index: 10;
-transition: color 0.5s;
-}
-.social-links a::after{
-    content: '' ;
-    width: 100%;
-    height: 100%;
-    top: -90px;
-    left: 0;
-    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+.nav-links{
     position: absolute;
-    transition: 0.5s;
-}
-.social-links a:hover::after{
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
     top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
 }
-.social-links a:hover .fa-brands{
-    color: white;
 }
-.social-links a:hover{
-    transform: translateY(-10px);
-}
-
-
-
-
-}
-
-
-
-
 </style>
 
 </html>
