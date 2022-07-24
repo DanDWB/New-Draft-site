@@ -29,7 +29,7 @@
 
 <div class="container">
     <div class="card">
-        
+        <div class="content">
         <h2>The Mission</h2>
         <h3>
             Welcome to the beginning, this is where and how it all started. I hope your journey is as immersive as it 
@@ -116,7 +116,7 @@ body{
 .container .card{
     position: relative;
     width: 600px;
-    height: 500px;
+    height: 550px;
     margin: 20px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -125,7 +125,20 @@ body{
    justify-content: center;
    align-items: center;
    border-top: 1px;
-    
+}
+
+.container .card .content{
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card .content h2{
+    color: white;
+}
+.container .card .content h3{
+    font-size: 15px;
+    color: white;
+    z-index: 1;
 }
 
 
@@ -174,20 +187,7 @@ body{
     transition: 1s;
 
 }
-.content{
-    color: rgb(255, 255, 255);
-    position: absolute;
-       top: 50%;
-       left: 8%;
-       transform: translateY(-50%) ;
-       z-index: 2;
-}
 
-.content h1{
-    font-size: 80px;
-    margin: 10px 0 30px;
-    line-height: 80px;
-}
 
 nav{
     display: flex;
