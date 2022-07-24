@@ -21,49 +21,52 @@
                 <li><a href="Mission.html">Mission</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="About.html">About</a></li>
-            </ul>    
+            </ul>     
         </div>
         <i class="fa-solid fa-rocket" onclick="showMenu()" style="color:rgb(110, 36, 36)"></i>
     </nav>
     
 
-<section class="about-me"></section>
-
-<h1>About me</h1>
-
-<p>My name is Wayne M. Bailey.  I am a Science fiction geek - likely just like you.
-
-    I live in the middle of England and I love all things Back to the Future, Star Wars, Stephen King and everything in between. 
-    
-    I have spent over two years now working on my first book. All of my free time has been devoted to it, I thank my poor wife for her patience, support and love. During this time I have also spent many man-hours learning everything that I can about the writing craft. Wow; its been both hard work and most enlightening. I have learnt such a lot. 
-    
-    I hope to make my project worthy of anyone who spends their valuable time reading it, and I hope that you enjoy reading it as much as I have learnt about writing it.
-    
-    Another point I wanted to make, was that I didn't do very well in my English exams at school, I'm very ashamed to admit that, and I went straight into an electrical engineering apprenticeship; which I did not enjoy. 
-    
-    So I never did do anything about those poor English grades. If people do like my book, what I would just like it to show people, is that If you want to do something like this, please give it a try, jump all in! You never know. 
-    
-    Enjoy yourself trying it. And most of all...  
-    
-    Thank you!</p>
-
-<p>Feel free to get in touch with me here</p>
-
-<div class="button">
-<a href="contact.html" class="Btn">Get in touch</a> 
-</div>   
-    </div>
-
-    <div class="met">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
-        <img src="Meteor.png.png">
+<div class="container">
+    <div class="card">
+        <div class="content">
+        <h2>About Me</h2>
         
+        
+        <p>
+        
+            My name is Wayne M. Bailey.  I am a Science fiction geek - likely just like you.
+
+            I live in the middle of England and I love all things Back to the Future, Star Wars, Stephen King and everything in between. 
+            
+            I have spent over two years now working on my first book. All of my free time has been devoted to it, I thank my poor wife for her patience, support and love. During this time I have also spent many man-hours learning everything that I can about the writing craft. Wow; its been both hard work and most enlightening. I have learnt such a lot. 
+            
+            I hope to make my project worthy of anyone who spends their valuable time reading it, and I hope that you enjoy reading it as much as I have learnt about writing it.
+            
+            Another point I wanted to make, was that I didn't do very well in my English exams at school, I'm very ashamed to admit that, and I went straight into an electrical engineering apprenticeship; which I did not enjoy. 
+            
+            So I never did do anything about those poor English grades. If people do like my book, what I would just like it to show people, is that If you want to do something like this, please give it a try, jump all in! You never know. 
+            
+            Enjoy yourself trying it. And most of all...  
+            
+            Thank you!
+            
+        </p>
+       
+        <a href="contact.html" class="Btn">Get in touch</a> 
     </div>
+<div/>
+
+<div class="met">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    
+</div>
 
 <!--------JavaScript for toggle-------->
 
@@ -81,6 +84,16 @@
         }
 
     </script>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelector(".card"),{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+</script>
     
 </body>
 
@@ -94,21 +107,70 @@
 
 }
 
-h1{
+
+
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   min-height: 100vh;
+}
+.container{
+    position: centre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.container .card{
+    position: relative;
+    width: 650px;
+    height: 550px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px;
+}
+
+.container .card .content{
+    padding: 30px;
     text-align: center;
-    font-size: 40px;
+    transition: 0.5s;
+}
+.container .card .content h2{
     color: white;
 }
-p{
-    text-align: center;
+.container .card .content h3{
+    font-size: 15px;
     color: white;
-    padding: 20px;
+    z-index: 1;
 }
+.container .card .content p{
+    font-size: 15px;
+    padding: 36px;
+    color: white;
+    font-weight: 800;
+
+}
+
+
+
+
+
+
+
+
 
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(Images/homepage.jpg);
+    background-image: url(Images/astro2.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -136,14 +198,6 @@ p{
     text-decoration: none;
     padding: 10px 20px;
     position: relative;
-    text-align: center;
-    margin: 0 auto;
-    width: 30px;
-    
-}
-.button{
-    text-align: center;
-    padding: 20px;
 }
 .Btn:hover{
     border: 1px solid rgb(255, 1, 1);
@@ -151,15 +205,6 @@ p{
     transition: 1s;
 
 }
-.content{
-    color: rgb(255, 255, 255);
-    position: absolute;
-       top: 50%;
-       left: 8%;
-       transform: translateY(-50%) ;
-       z-index: 2;
-}
-
 
 
 nav{
@@ -271,6 +316,51 @@ nav .fa-solid{
     font-size: 30px;
     line-height: 30px;
 }
+
+
+
+
+.container .card{
+    position: relative;
+    width: 650px;
+    height: 850px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px;
+}
+
+.container .card .content{
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card .content h2{
+    color: white;
+}
+.container .card .content h3{
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+}
+.container .card .content p{
+    font-size: 15px;
+    padding: 36px;
+    color: white;
+    font-weight: 800;
+
+}
+
+
+
+
+
+
+
 nav .fa-solid{
     display: block;
     margin: top;
