@@ -28,17 +28,17 @@
 
 <section class="container">
     <div class="card">
-        <div class="card-image"></div> 
+        <div class="card-image sample-1"></div> 
         <h2>Title</h2>
         <p>Text</p>
     </div>
     <div class="card">
-        <div class="card-image"></div> 
+        <div class="card-image sample-1"></div> 
         <h2>Title</h2>
         <p>Text</p>
     </div>
     <div class="card">
-        <div class="card-image"></div> 
+        <div class="card-image sample-1"></div> 
         <h2>Title</h2>
         <p>Text</p>
     </div>
@@ -101,12 +101,23 @@ box-sizing: border-box;
 
 
 .container{
-    display: flex;
+    display: flex; /*this makes them side by side*/
+    justify-content: center;
 }
 .card{
     background: white;
+    width: 270px;
+    height: 400px;
+margin: 10px;
 }
-
+.card-image{
+    background-color: blue;
+    height: 150px;
+    margin-bottom: 15px;
+}
+.sample-1{
+    background-image: url(images/sample.jpg.crdownload);
+}
 
 h1{
 text-align: center;
