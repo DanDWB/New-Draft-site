@@ -118,11 +118,12 @@ box-sizing: border-box;
 .container{
     display: flex; /*this makes them side by side*/
     justify-content: center;
+    flex-wrap: wrap;
 }
 .card{
     background: rgb(100, 91, 91);
     width: 350px;
-    height: 450px;
+    
 margin: 10px;
 border-radius: 15px;
 /* From https://css.glass */
@@ -136,18 +137,51 @@ border: 1px solid rgba(157, 138, 138, 0.59);
 .card-image{
     height: 170px;
     margin-bottom: 15px;
-    background-size: cover;
+    background-size: 350px;
     border-radius: 15px 15px 0 0;
 }
+
+.Btn{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(182, 152, 152);
+    padding: 20px 20px;
+    display: block;
+    background-color: black;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px 50px;
+}
+.Btn:hover{
+    border: 1px solid rgb(255, 1, 1);
+    background-color: #792620;
+    size-adjust: 50px;
+    transition: 1s;
+
+}
+
+
+
 .sample-1{   /*I'd change these to different images and classes when done*/
-    background-image: url(images/sample.jpg.crdownload);
+    background-image: url(images/update.jpeg);
 }
 .sample-1{
-    background-image: url(images/sample.jpg.crdownload);
+    background-image: url(images/update.jpeg);
 }
 .sample-1{
-    background-image: url(images/sample.jpg.crdownload);
+    background-image: url(images/update.jpeg);
 }
+
+.card p{
+    padding: 10px;
+    
+}
+.card h2{
+    padding: 10px;
+    text-align: center;
+}
+
+
 
 h1{
 text-align: center;
@@ -308,12 +342,6 @@ nav .fa-solid{
 }
 .nav-links ul {
     padding: 30px;
-}
-
-.container{
-    display: block; /*this makes them side by side*/
-    justify-content: center;
-    position: centre;
 }
 
 
