@@ -29,17 +29,17 @@
 <section class="container">
     <div class="card">
         <div class="card-image sample-1"></div> 
-        <h2>Title</h2>
+        <h2>July 2022</h2>
         <p>Text</p>
     </div>
     <div class="card">
         <div class="card-image sample-1"></div> 
-        <h2>Title</h2>
+        <h2>April 2022</h2>
         <p>Text</p>
     </div>
     <div class="card">
         <div class="card-image sample-1"></div> 
-        <h2>Title</h2>
+        <h2>February 2022</h2>
         <p>Text</p>
     </div>
 
@@ -105,15 +105,30 @@ box-sizing: border-box;
     justify-content: center;
 }
 .card{
-    background: white;
-    width: 270px;
-    height: 400px;
+    background: rgb(100, 91, 91);
+    width: 350px;
+    height: 450px;
 margin: 10px;
+border-radius: 15px;
+/* From https://css.glass */
+background: rgba(157, 138, 138, 0.55);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.6px);
+-webkit-backdrop-filter: blur(9.6px);
+border: 1px solid rgba(157, 138, 138, 0.59);
 }
 .card-image{
-    background-color: blue;
-    height: 150px;
+    height: 170px;
     margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.sample-1{   /*I'd change these to different images and classes when done*/
+    background-image: url(images/sample.jpg.crdownload);
+}
+.sample-1{
+    background-image: url(images/sample.jpg.crdownload);
 }
 .sample-1{
     background-image: url(images/sample.jpg.crdownload);
@@ -280,6 +295,11 @@ nav .fa-solid{
     padding: 30px;
 }
 
+.container{
+    display: block; /*this makes them side by side*/
+    justify-content: center;
+    position: centre;
+}
 
 
 .nav-links ul li{
