@@ -85,31 +85,19 @@
 <!--------JavaScript for toggle-------->
 
 
-    <script>
+<script>
 
-        var navLinks = document.getElementById("navLinks");
+    var navLinks = document.getElementById("navLinks");
 
-        function showMenu(){
-            if (document.getElementById('navLinks').style.display == 'none'){
-                document.getElementById('navLinks').style.display = 'block';
-            } else {
-                document.getElementById('navLinks').style.display = 'none';
-            }
-        }
-        document.getElementById('showmenu').addEventListener('click', navLinks);
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
 
-        
-      /*  function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
 
-var navLinks = document.getElementById("navLinks");
-
-        function hideMenu(){
-            navLinks.style.display = 'none';
-        }
-    */
-    </script>
+</script>
 
 </body>
 
@@ -375,16 +363,19 @@ nav .fa-solid{
     padding: 30px;
 }
 
-
+small{
+    font-size: 10px;
+}
 .nav-links ul li{
     display: block;
 }
 .nav-links{
     position: absolute;
+    
    
     width: 200px;
     top: 0;
-   right: 0px; 
+    right: -200px;
     text-align: left;
     z-index: 2;
     transition: 1s;
@@ -395,6 +386,7 @@ backdrop-filter: blur( 10px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
 
 
 
