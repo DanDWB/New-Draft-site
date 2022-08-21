@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a165257d25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="index.html"><img src="Images/smol-logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-arrow-right-to-bracket" onclick="hideMenu()" style="color:white"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Mission.html">Mission</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>    
+        </div>
+        <i class="fa-solid fa-rocket" onclick="showMenu()" style="color:rgb(110, 36, 36)"></i>
+    </nav>
+december 3 yrs
+<section class="container">
+    <div class="card">
+        <div class="card-image sample-6"></div> 
+        <h2>Mid Aug 2022</h2>
+        <p>I have officially set the estimated launch date, after a 3 year long journey, with what started as just a creative hobby, has turned into so much more <br>
+        I'm aiming much higher than this now, thinking about how I can eventually
+    see my books in local stores!</p>
+    </div>
+    <div class="card">
+        <div class="card-image sample-5"></div> 
+        <h2>Late July 2022</h2>
+        <p>Having agreed a style and sending basic sketches to the cover artist, we have come up with the finished article. I have also purchased and paid for my
+             two x ISBN numbers, one for the ebook and one for the paperback. 
+            The official cover is in my possession. All that time spent 
+            brainstorming, that kept me up some nights, was finally worth it! <br>
+            It looks better than I anticipated.
+    </div>
+    <div class="card">
+        <div class="card-image sample-3"></div> 
+        <h2>Late July 2022</h2>
+        <p>I have made adjustments in align with the final revisions. <br>
+        I'm proud to say, My next stage will be finally getting round to editing the book cover!!</p>
+    </div>
+    <div class="card">
+        <div class="card-image sample-4"></div> 
+        <h2>July 2022</h2>
+        <p>My next challenge arises! <br> I am now proudly focusing all of 
+        my time designing the first draft of my book cover. <br> This is much harder than I anticipated, but 
+        the theme I am going for is vintage science fiction style. </p>
+    </div>
+    <div class="card">
+        <div class="card-image sample-2"></div> 
+        <h2>Late June 2022</h2>
+        <p>I'm at a point now of checking the final revisions that the editor has made for me. <br>
+            Once I have checked that I'm happy with her revisions, that is it for the editing process. <br>
+            All that is left after this is formatting and we're there.</p>
+    </div>
+    <div class="card">
+        <div class="card-image sample-1"></div> 
+        <h2>Early June 2022</h2>
+        <p>I have officially sent my manuscript off to an editor. <br>
+
+            I'm very excited and nervous, this is a huge milestone. <br>
+            
+            I have also chosen my cover artist, found online with an impressive website. We have agreed on a price for his services. All we need to do now is to place
+             an order, and start to think which style would suit my project.</p>
+    </div>
+
+
+
+
+</section>
+  
+    
+
+
+
+
+
+
+
+<div class="met">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    
+</div>
+
+<!--------JavaScript for toggle-------->
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+
+
+<style>
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    overflow: hidden;
+}
+
+.container{
+    display: flex; /*this makes them side by side*/
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background: rgb(100, 91, 91);
+    width: 350px;
+    
+margin: 10px;
+border-radius: 15px;
+/* From https://css.glass */
+background: rgba(157, 138, 138, 0.55);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.6px);
+-webkit-backdrop-filter: blur(9.6px);
+border: 1px solid rgba(157, 138, 138, 0.59);
+transition: 1s;
+}
+
+
+.card:hover{
+    background: rgba(108, 49, 49, 0.55);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.6px);
+-webkit-backdrop-filter: blur(9.6px);
+border: 1px solid rgba(157, 138, 138, 0.59);
+cursor: pointer;
+color: white;
+}
+
+
+.card-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: 350px;
+    border-radius: 15px 15px 0 0;
+}
+
+.Btn{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(182, 152, 152);
+    padding: 20px 20px;
+    display: block;
+    background-color: black;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px 50px;
+}
+.Btn:hover{
+    border: 1px solid rgb(255, 1, 1);
+    background-color: #792620;
+    size-adjust: 50px;
+    transition: 1s;
+
+}
+
+
+
+.sample-3{   /*I'd change these to different images and classes when done*/
+    background-image: url(Images/uppp.jpg);
+ 
+}
+.sample-2{
+        background-image: url(Images/Upp.jpg);
+}
+.sample-1{
+        background-image: url(Images/update.jpeg);
+}
+.sample-4{
+    background-image: url(Images/Cover.jpg);
+}
+.sample-5{
+    background-image: url(Images/CoverDone.jpg);
+}
+.sample-6{
+    background-image: url(Images/Launch.jpg);
+}
+.card p{
+    padding: 10px;
+    
+}
+.card h2{
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+h1{
+text-align: center;
+font-size: 100px;
+padding-top: 100px;
+color: #921e16;
+text-shadow: white;
+transition: 0.5s;
+}
+h1:hover{
+    color: aliceblue;
+}
+
+
+
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    size: 70px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+
+
+.met img{
+width: 30px;
+animation: meteor 7s linear infinite;
+}
+.met{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: -70px;
+}
+nav .fa-solid{
+    display: none;
+}
+
+
+@keyframes meteor{
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50%{
+       
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(+80vh);
+        opacity: 0;
+    }
+}
+.met img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.met img:nth-child(2){
+    animation-delay: 1s;
+    width: 15px;
+}
+.met img:nth-child(3){
+    animation-delay: 3s;
+    width: 20px;
+}
+.met img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 10px;
+}
+.met img:nth-child(5){
+    animation-delay: 3s;
+    width: 25px;
+}
+.met img:nth-child(6){
+    animation-delay: 6s;
+    width: 22px;
+}
+.met img:nth-child(7){
+    animation-delay: 7s;
+    width: 20px;
+}
+
+
+@media(max-width: 700px){
+.content h1{
+    font-size: 30px;
+    line-height: 30px;
+}
+nav .fa-solid{
+    display: block;
+    margin: top;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+   
+}
+.nav-links ul {
+    padding: 30px;
+}
+
+small{
+    font-size: 10px;
+}
+.nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position: absolute;
+    
+   
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+    background: rgba( 255, 0, 0, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 10px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+
+
+
+
+
+
+
+}
+</style>
+
+</html>
