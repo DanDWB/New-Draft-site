@@ -26,6 +26,7 @@
         <i class="fa-solid fa-rocket" onclick="showMenu()" style="color:rgb(110, 36, 36)"></i>
     </nav>
     
+<section class="contain"> 
 
 <div class="container">
     <div class="card">
@@ -48,7 +49,7 @@
         <a href="https://www.amazon.co.uk/Mars-Migration-ordinary-selected-adventure-ebook/dp/B0BCKPLK2L/ref=sr_1_1?keywords=mars+migration&qid=1663792735&sprefix=mars+migra%2Caps%2C61&sr=8-1" class="Btn">Amazon</a> <a href="https://books2read.com/u/md1WA5" class="Btn">Everywhere else</a> 
     </div>
 <div/>
-
+</section>
 <div class="met">
     <img src="Meteor.png.png">
     <img src="Meteor.png.png">
@@ -101,6 +102,7 @@ body{
    align-items: center; 
    min-height: 100vh;
 }
+
 
 
 
@@ -162,7 +164,7 @@ body{
     height: 200px;
     margin-bottom: 15px;
     background-size: 350px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 15px 15px;
     
 }
 
@@ -321,17 +323,17 @@ nav .fa-solid{
 
 
 @media(max-width: 700px){
-.content h1{
-    font-size: 30px;
-    line-height: 30px;
+    .container{
+    position: centre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
 }
-
-
-
-
 .container .card{
     position: relative;
-    width: 650px;
+    width: 400px;
     
     margin: 20px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
@@ -362,6 +364,23 @@ nav .fa-solid{
     color: white;
     font-weight: 800;
 
+}
+
+.sample-0{
+    background-image: url(Images/mars-migration-mockup-1-landscape.jpg);
+    background-repeat: no-repeat;
+    
+    
+    
+    
+}
+
+.card-image{
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: 350px;
+    border-radius: 15px 15px 15px 15px;
+    
 }
 
 
