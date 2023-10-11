@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+    (function () {
+      // Create a script tag for loading the library
+      var script = document.createElement("script");
+  
+      // Initialize the Web-SDK at the onLoad event of the script tag above so it will be called when the library is loaded.
+      script.onload = () => {
+        window.GrafanaFaroWebSdk.initializeFaro({
+          // Mandatory, the URL of the Grafana Cloud collector with embedded application key.
+          url: 'https://faro-collector-prod-gb-south-0.grafana.net/collect/45fe61400c661df8ff6032424d9e8eb8',
+  
+          // Mandatory, the identification label(s) of your application
+          app: {
+            name: 'Mars M',
+            version: "1.0.0",
+          },
+        });
+      };
+  
+      // Set the source of the script tag to the CDN
+      script.src =
+        "https://unpkg.com/@grafana/faro-web-sdk@^1.0.0/dist/bundle/faro-web-sdk.iife.js";
+  
+      // Append the script tag to the head of the HTML page
+      document.head.appendChild(script);
+    })();
+  </script>
     <link rel="icon" href="Images/smol-logo.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
