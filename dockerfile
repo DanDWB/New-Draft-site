@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-COPY . \Users\user\Desktop\websites\New-Draft-site
+COPY . /usr/share/nginx/html
 
 EXPOSE 80
 
